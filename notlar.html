@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Notlar - İTÜ Hazırlık İngilizce Notları</title>
-<style>
-  body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #222; }
-  header {
-    background: #002855; color: white; padding: 20px 20px; text-align: center;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 1.6rem;
-  }
-  header a.back-btn {
-    background: #004080; color: white; text-decoration: none; padding: 10px 18px;
-    border-radius: 6px; font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  header a.back-btn:hover {
-    background: #002855;
-  }
-  main {
-    max-width: 900px; margin: 40px auto; padding: 0 20px;
-  }
-  .note-item {
-    background: white; padding: 18px 25px; margin-bottom: 18px;
-    border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.08);
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .note-title {
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-  .buy-btn {
-    background: #004080; color: white; border: none; padding: 10px 22px;
-    border-radius: 6px; cursor: pointer; font-weight: 700;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  .buy-btn:hover {
-    background: #002855;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İTÜ Hazırlık İngilizce Notları - Notlar & Satış</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    nav {
+      background-color: #002855;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav h1 {
+      color: white;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:last-child {
+      margin-right: 0;
+    }
+    nav a:hover {
+      color: #f0a500;
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .note-preview {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 6px;
+    }
+    .cta {
+      background-color: #004080;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    .cta:hover {
+      background-color: #0059b3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <h1>İTÜ Hazırlık Notları</h1>
+      <div>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="notlar.html">Notlar & Satış</a>
+      </div>
+    </nav>
+  </header>
 
-<header>
-  <h1>Notlar</h1>
-  <a href="index.html" class="back-btn">Ana Sayfaya Dön</a>
-</header>
+  <section>
+    <h2>📘 Ne Sunuyorum?</h2>
+    <p>İTÜ hazırlık öğrencileri için özenle hazırlanmış renkli, açıklamalı ve sınava yönelik notlar. Grammar, vocabulary, essay planları ve reading stratejileri tek dosyada.</p>
 
-<main>
-  <div class="note-item">
-    <span class="note-title">Grammar - Temel Kurallar</span>
-    <a href="https://shopier.com/sale/urun1" target="_blank" class="buy-btn" rel="noopener noreferrer">Satın Al</a>
-  </div>
-  <div class="note-item">
-    <span class="note-title">Vocabulary - Önemli Kelimeler</span>
-    <a href="https://shopier.com/sale/urun2" target="_blank" class="buy-btn" rel="noopener noreferrer">Satın Al</a>
-  </div>
-  <div class="note-item">
-    <span class="note-title">Essay Planları</span>
-    <a href="https://shopier.com/sale/urun3" target="_blank" class="buy-btn" rel="noopener noreferrer">Satın Al</a>
-  </div>
-  <div class="note-item">
-    <span class="note-title">Reading Stratejileri</span>
-    <a href="https://shopier.com/sale/urun4" target="_blank" class="buy-btn" rel="noopener noreferrer">Satın Al</a>
-  </div>
-</main>
+    <h2>🔒 Güvenlik</h2>
+    <p>Her not kişiye özel hazırlanır. PDF içinde isim/eposta etiketi vardır. Paylaşım tespit edildiğinde satış erişimi sonlandırılır.</p>
 
+    <h2>💡 Önizleme</h2>
+    <div class="note-preview">
+      <p><strong>Örnek Konu:</strong> Essay Plan - Opinion Essay</p>
+      <ul>
+        <li>Introduction: Paraphrase + Thesis</li>
+        <li>Body 1: Supporting reason 1 + example</li>
+        <li>Body 2: Supporting reason 2 + example</li>
+        <li>Conclusion: Restate thesis + opinion</li>
+      </ul>
+    </div>
+
+    <h2>💳 Satın Al</h2>
+    <p>Notları satın almak için aşağıdaki bağlantıya tıklayın:</p>
+    <a href="https://your-shopier-link.com" class="cta" target="_blank" rel="noopener">Satın Al</a>
+  </section>
+
+  <footer>
+    © 2025 İTÜ Not Merkezi · İletişim: not@ituhazirlik.com
+  </footer>
 </body>
 </html>

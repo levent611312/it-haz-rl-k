@@ -2,112 +2,82 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>İTÜ Hazırlık İngilizce Notları - Notlar & Satış</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İTÜ Hazırlık Notları - Satış</title>
   <style>
     body {
-      margin: 0;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       color: #222;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
     }
-    nav {
+    header {
       background-color: #002855;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav h1 {
       color: white;
+      padding: 20px 40px;
+      text-align: center;
+      border-radius: 6px;
+    }
+    h1 {
       margin: 0;
-      font-size: 1.5rem;
     }
     nav a {
       color: white;
-      text-decoration: none;
-      margin-right: 20px;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:last-child {
-      margin-right: 0;
-    }
-    nav a:hover {
-      color: #f0a500;
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .note-preview {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 6px;
-    }
-    .cta {
-      background-color: #004080;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
+      margin-top: 10px;
       display: inline-block;
-      border-radius: 5px;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
+      text-decoration: underline;
+      font-weight: 500;
     }
-    .cta:hover {
-      background-color: #0059b3;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 40px;
+    }
+    li {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    li:hover {
+      background-color: #e6f0ff;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #f1f1f1;
       font-size: 0.9em;
+      margin-top: 60px;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <h1>İTÜ Hazırlık Notları</h1>
-      <div>
-        <a href="index.html">Ana Sayfa</a>
-        <a href="notlar.html">Notlar & Satış</a>
-      </div>
-    </nav>
+    <h1>İTÜ Hazırlık İngilizce Notları</h1>
+    <nav><a href="index.html">← Ana Sayfaya Dön</a></nav>
   </header>
 
-  <section>
-    <h2>📘 Ne Sunuyorum?</h2>
-    <p>İTÜ hazırlık öğrencileri için özenle hazırlanmış renkli, açıklamalı ve sınava yönelik notlar. Grammar, vocabulary, essay planları ve reading stratejileri tek dosyada.</p>
-
-    <h2>🔒 Güvenlik</h2>
-    <p>Her not kişiye özel hazırlanır. PDF içinde isim/eposta etiketi vardır. Paylaşım tespit edildiğinde satış erişimi sonlandırılır.</p>
-
-    <h2>💡 Önizleme</h2>
-    <div class="note-preview">
-      <p><strong>Örnek Konu:</strong> Essay Plan - Opinion Essay</p>
-      <ul>
-        <li>Introduction: Paraphrase + Thesis</li>
-        <li>Body 1: Supporting reason 1 + example</li>
-        <li>Body 2: Supporting reason 2 + example</li>
-        <li>Conclusion: Restate thesis + opinion</li>
-      </ul>
-    </div>
-
-    <h2>💳 Satın Al</h2>
-    <p>Notları satın almak için aşağıdaki bağlantıya tıklayın:</p>
-    <a href="ingilizce notu shopier.com/36827236 class="cta" target="_blank" rel="noopener">Satın Al</a>
-  </section>
+  <main>
+    <h2>Satın Alabileceğiniz Notlar</h2>
+    <ul>
+      <li onclick="location.href='https://www.shopier.com/36827236'">Grammar Temelleri</li>
+      <li onclick="location.href='https://shopier.com/link2'">Vocabulary Listesi</li>
+      <li onclick="location.href='https://shopier.com/link3'">Essay Planları</li>
+      <li onclick="location.href='https://shopier.com/link4'">Reading Stratejileri</li>
+      <li onclick="location.href='https://shopier.com/link5'">Practice Tests</li>
+    </ul>
+  </main>
 
   <footer>
     © 2025 İTÜ Not Merkezi · İletişim: not@ituhazirlik.com
   </footer>
 </body>
 </html>
+
+
  

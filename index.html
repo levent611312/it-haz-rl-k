@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>İTÜ Hazırlık İngilizce Notları - Ana Sayfa</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       color: #222;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
     }
 
     nav {
@@ -68,10 +79,10 @@
         background-color: #002855;
         position: absolute;
         top: 60px;
-        right: -3px;
+        right: 0;
         width: 150px;
         padding: 10px;
-        border-radius: 0px;
+        border-radius: 0;
       }
 
       .nav-links.active {
@@ -83,6 +94,7 @@
       padding: 30px 20px;
       max-width: 1000px;
       margin: auto;
+      flex: 1;
     }
 
     footer {
@@ -126,5 +138,6 @@
   </script>
 </body>
 </html>
+
 
 

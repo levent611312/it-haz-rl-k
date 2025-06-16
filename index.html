@@ -18,32 +18,65 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
+      position: relative;
     }
 
     nav h1 {
       color: white;
-      margin: 0;
       font-size: 1.4rem;
+      margin: 0;
     }
 
-    nav div {
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .nav-links {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
+      gap: 20px;
     }
 
-    nav a {
+    .nav-links a {
       color: white;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       color: #f0a500;
       text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #002855;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
     }
 
     section {
@@ -52,37 +85,11 @@
       margin: auto;
     }
 
-    section h2 {
-      font-size: 1.6rem;
-    }
-
-    section p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
       background-color: #f1f1f1;
       font-size: 0.9em;
-    }
-
-    /* Responsive: Ekran daraldığında menü dikey hizalansın */
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav div {
-        flex-direction: column;
-        width: 100%;
-      }
-
-      nav a {
-        padding: 8px 0;
-      }
     }
   </style>
 </head>
@@ -90,7 +97,12 @@
   <header>
     <nav>
       <h1>İTÜ Hazırlık Notları</h1>
-      <div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="nav-links" id="navLinks">
         <a href="index.html">Ana Sayfa</a>
         <a href="notlar.html">Notlar & Satış</a>
       </div>
@@ -106,6 +118,13 @@
   <footer>
     © 2025 İTÜ Not Merkezi · İletişim: not@ituhazirlik.com
   </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
+
 

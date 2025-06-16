@@ -16,11 +16,7 @@
     header {
       background-color: #002855;
       color: white;
-      padding: 30px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+      padding: 20px 40px;
     }
 
     header h1 {
@@ -28,10 +24,17 @@
       font-size: 1.5rem;
     }
 
+    nav {
+      background-color: #002855;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: center;
+    }
+
     nav a {
       color: rgb(165, 225, 247);
       text-decoration: none;
-      margin-left: 20px;
+      margin: 0 20px;
       font-weight: 600;
       font-size: 1.15rem;
     }
@@ -49,7 +52,7 @@
 
     h2 {
       margin-top: 30px;
-      color:#012247
+      color:#012247;
     }
 
     ul {
@@ -76,24 +79,19 @@
     footer {
       text-align: center;
       font-size: 0.9em;
-      margin-top: 60px;
       color: #555;
       padding: 20px;
+      background-color: #f1f1f1;
     }
 
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
       nav {
-        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
       }
 
       nav a {
-        margin-left: 0;
-        margin-right: 15px;
+        margin: 10px 0;
       }
     }
   </style>
@@ -102,9 +100,6 @@
 
   <header>
     <h1>İTÜ Hazırlık Notları</h1>
-    <nav>
-      <a href="index.html">Ana Sayfa</a>
-    </nav>
   </header>
 
   <main>
@@ -118,12 +113,17 @@
     </ul>
   </main>
 
+  <nav>
+    <a href="index.html">Ana Sayfa</a>
+  </nav>
+
   <footer>
     © 2025 İTÜ Not Merkezi · İletişim: not@ituhazirlik.com
   </footer>
 
 </body>
 </html>
+
 
 
 

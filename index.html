@@ -11,42 +11,78 @@
       background-color: #f9f9f9;
       color: #222;
     }
+
     nav {
       background-color: #002855;
-      padding: 15px 40px;
+      padding: 15px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
+
     nav h1 {
       color: white;
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
+
+    nav div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin-right: 20px;
       font-weight: 600;
       transition: color 0.3s ease;
     }
-    nav a:last-child {
-      margin-right: 0;
-    }
+
     nav a:hover {
       color: #f0a500;
       text-decoration: underline;
     }
+
     section {
-      padding: 40px;
-      max-width: 900px;
+      padding: 30px 20px;
+      max-width: 1000px;
       margin: auto;
     }
+
+    section h2 {
+      font-size: 1.6rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #f1f1f1;
       font-size: 0.9em;
+    }
+
+    /* Responsive: Ekran daraldığında menü dikey hizalansın */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav div {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav a {
+        padding: 8px 0;
+      }
     }
   </style>
 </head>
@@ -72,3 +108,4 @@
   </footer>
 </body>
 </html>
+

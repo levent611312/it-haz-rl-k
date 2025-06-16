@@ -22,12 +22,11 @@
     header {
       background-color: #002855;
       color: white;
-      padding: 30px 20px;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
-      width: 100%;
     }
 
     header h1 {
@@ -36,9 +35,10 @@
     }
 
     .menu-toggle {
-      display: none;
+      display: flex;
       flex-direction: column;
       cursor: pointer;
+      z-index: 20;
     }
 
     .bar {
@@ -49,8 +49,15 @@
     }
 
     .nav-links {
-      display: flex;
-      gap: 20px;
+      display: none;
+      flex-direction: column;
+      background-color: #002855;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 10;
     }
 
     .nav-links a {
@@ -58,39 +65,18 @@
       text-decoration: none;
       font-weight: 600;
       font-size: 1.1rem;
+      padding: 12px 20px;
+      border-bottom: 1px solid #ffffff22;
+      display: block;
     }
 
     .nav-links a:hover {
-      color: #e2bceb;
-      text-decoration: underline;
+      background-color: #013472;
+      color: #fff;
     }
 
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: flex;
-      }
-
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #002855;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        padding: 10px 0;
-        border-top: 1px solid #ffffff44;
-        z-index: 10;
-      }
-
-      .nav-links a {
-        padding: 12px 20px;
-        border-bottom: 1px solid #ffffff22;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
+    .nav-links.active {
+      display: flex;
     }
 
     main {
@@ -145,4 +131,6 @@
 
 </body>
 </html>
+
+
 

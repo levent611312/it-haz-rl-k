@@ -15,16 +15,19 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       color: #222;
+      width: 100%;
+      overflow-x: hidden;
     }
 
     header {
       background-color: #002855;
       color: white;
-      padding: 30px 40px;
+      padding: 30px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
+      width: 100%;
     }
 
     header h1 {
@@ -72,12 +75,17 @@
         flex-direction: column;
         background-color: #002855;
         position: absolute;
-        top: 70px;
-        right: 40px;
-        width: 160px;
-        padding: 10px;
-        border-radius: 4px;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        border-top: 1px solid #ffffff44;
         z-index: 10;
+      }
+
+      .nav-links a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #ffffff22;
       }
 
       .nav-links.active {
@@ -137,3 +145,4 @@
 
 </body>
 </html>
+

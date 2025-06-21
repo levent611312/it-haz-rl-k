@@ -7,9 +7,18 @@
   <link rel="stylesheet" href="style-index.css" />
 </head>
 <body>
-  <header>
-    <h1>İTÜ Hazırlık Notları</h1>
-  </header>
+<header>
+  <h1>İTÜ Hazırlık Notları</h1>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Menüyü aç/kapa" onclick="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+  <nav id="navLinks" class="nav-links" role="navigation">
+    <a href="index.html" class="active" aria-current="page">Ana Sayfa</a>
+    <a href="notlar.html">Notlar</a>
+  </nav>
+</header>
   <main>
     <h2>Hoşgeldiniz!</h2>
     <p>Hazırlık atlama süresince İTÜ öğrencileri tarafından hazırlanmış İngilizce notlarına buradan ulaşabilirsiniz.</p>

@@ -1,0 +1,25 @@
+/* header */
+header {
+  background-color: #002855;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* main */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+/* footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}

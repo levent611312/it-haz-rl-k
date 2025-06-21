@@ -2,145 +2,21 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>İTÜ Hazırlık İngilizce Notları - Ana Sayfa</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      width: 100%;
-      height: 100%;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    header {
-      background-color: #012247;
-      color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-
-    .menu-toggle {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      z-index: 20;
-    }
-
-    .bar {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 4px 0;
-    }
-
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background-color: #002855;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 100%;
-      padding: 10px 0;
-      z-index: 10;
-    }
-
-    .nav-links a {
-      color: rgb(165, 225, 247);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      padding: 12px 20px;
-      border-bottom: 1px solid #ffffff22;
-      display: block;
-    }
-
-    .nav-links a:hover {
-      background-color: #013472;
-      color: #fff;
-    }
-
-    .nav-links.active {
-      display: flex;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      flex-grow: 1; /* Sayfa içeriği azsa bile footer'ı aşağı itmek için */
-    }
-
-    h2 {
-      margin-top: 30px;
-      color: #012247;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f1f1f1;
-      font-size: 0.9em;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İTÜ Hazırlık Notları - Ana Sayfa</title>
+  <link rel="stylesheet" href="style-index.css" />
 </head>
 <body>
-
-  <header></p>
+  <header>
     <h1>İTÜ Hazırlık Notları</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">Ana Sayfa</a>
-      <a href="notlar.html">Notlar</a>
-    </div>
   </header>
-
   <main>
     <h2>Hoşgeldiniz!</h2>
-    <p>Hazırlık atlama süresince İTÜ öğrencileri tarafından özenle hazırlanmış İngilizce notlarına buradan ulaşabilir ve inceleyebilirsiniz.</p>
-    <p>Sayfalar arasında üst menü ile kolayca geçiş yapabilirsiniz.
+    <p>Hazırlık atlama süresince İTÜ öğrencileri tarafından hazırlanmış İngilizce notlarına buradan ulaşabilirsiniz.</p>
   </main>
-
   <footer>
     © 2025 İTÜ Not Merkezi · İletişim: not@ituhazirlik.com
   </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("navLinks").classList.toggle("active");
-    }
-  </script>
-
 </body>
 </html>
-
-
-
-
 
